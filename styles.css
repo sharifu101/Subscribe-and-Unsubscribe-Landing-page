@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #bee3f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.popup {
+  display: flex;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  width: 90%;
+  overflow: hidden;
+  position: relative;
+}
+
+.left {
+  background: #e6f2fb;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.left img {
+  width: 80px;
+  height: 80px;
+}
+
+.right {
+  flex: 2;
+  padding: 30px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #0369a1;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #004a73;
+}
+
+p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.email-field {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  background: white;
+}
+
+.email-field img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.email-field input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #444;
+}
+
+button {
+  background-color: #0369a1;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #025780;
+}
+
+.help {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.help button {
+  background: none;
+  color: #007BFF;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 13px;
+}
+
+.help button:hover {
+  text-decoration: underline;
+}
