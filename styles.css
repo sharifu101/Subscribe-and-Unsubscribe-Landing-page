@@ -6,11 +6,25 @@
 }
 
 body {
-  background-color: #bee3f8;
+  background: url('images/WCS_PS_Logo-social.jpg') no-repeat center center fixed;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional overlay for contrast */
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(190, 227, 248, 0.85);
+  z-index: 0;
 }
 
 .overlay {
@@ -18,6 +32,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .popup {
@@ -78,26 +94,6 @@ form {
   gap: 12px;
 }
 
-.email-field {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 6px;
-  background: white;
-}
-
-.email-field img {
-  width: 20px;
-  margin-right: 10px;
-}
-
-.email-field input {
-  border: none;
-  outline: none;
-  flex: 1;
-}
-
 input[type="checkbox"] {
   margin-right: 8px;
   transform: scale(1.2);
@@ -130,15 +126,18 @@ button:hover {
   font-size: 13px;
 }
 
-.help button {
+.help button,
+.help a {
   background: none;
   color: #007BFF;
   border: none;
   cursor: pointer;
   padding: 0;
   font-size: 13px;
+  text-decoration: none;
 }
 
-.help button:hover {
+.help button:hover,
+.help a:hover {
   text-decoration: underline;
 }
